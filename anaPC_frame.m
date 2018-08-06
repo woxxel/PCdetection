@@ -1,8 +1,8 @@
 %%%   written by A.Schmidt, last reviewed on August, 6th, 2018
 
-function PC_fields = anaPC_frame(s)
+function PC_fields = anaPC_frame(pathMouse,s)
 
-pathMouse = '/home/wollex/Data/Documents/Uni/2016-XXXX_PhD/Japan/Work/Data/884';
+%  pathMouse = '/home/wollex/Data/Documents/Uni/2016-XXXX_PhD/Japan/Work/Data/884';
 pathSession = pathcat(pathMouse,sprintf('Session%02d',s));
 pathBH = dir(pathcat(pathSession,'*aligned.mat'));
 pathBH = pathcat(pathSession,pathBH.name);
